@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+h1,h2{
+    /*font-family: 'Ubuntu', sans-serif;*/
+}
+p,a,button{
+    /*font-family: 'Roboto', sans-serif;*/
+}
+h4,h5{
+    /*font-family: 'Noto Sans JP', sans-serif;*/
+}
+
+.ani-1{
+    animation-delay: 0.1s;
+}
+.ani-2{
+    animation-delay: 0.2s;
+}
+.ani-3{
+    animation-delay: 0.3s;
+}
+.ani-4{
+    animation-delay: 0.4s;
+}
+.ani-5{
+    animation-delay: 0.5s;
+
+}
+.ani-6{
+    animation-delay: 0.6s;
+
+}
+.ani-7{
+    animation-delay: 0.7s;
+
+}
+.ani-8{
+    animation-delay: 0.8s;
+
+}
+.ani-9{
+    animation-delay: 0.9s;
+
+}
+.ani-10{
+    animation-delay: 1.5s;
+
+}
+.ani-11{
+    animation-delay: 2s;
+
+}
+
+
+html{
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 2001;
+    /*background-color: rgba(183, 155, 108, 0.34);*/
+    backdrop-filter: blur(5px);
+}
+
+header {
+    height: 8vh;
+}
+header a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+.logo{
+    width: 55%;
+}
+.domrey-menu {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.domrey-menu li {
+    padding: 0 1em;
+}
+.domrey-menu li a {
+    font-family: 'Dosis', sans-serif;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 15px;
+    padding: 7px 13px;
+}
+.domrey-menu li a:hover {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.domrey-menu li a.active {
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+
+
+.line-1,
+.line-2,
+.line-3 {
+    width: 25px;
+    height: 0.1em;
+    background: #1c81fc;
+}
+.line-2 {
+    margin: 0.3em 0;
+}
+.rotate-domrey-bars .line-1 {
+    transform: rotate(-405deg) translate(-5px, 3px);
+}
+.rotate-domrey-bars .line-2 {
+    opacity: 0;
+}
+.rotate-domrey-bars .line-3 {
+    transform: rotate(405deg) translate(-5px, -4px);
+}
+.domrey-bars {
+    cursor: pointer;
+    display: none;
+    z-index: 5;
+}
+.domrey-bars div {
+    transition: 0.5s;
+}
+
+/*Apply styles after scroll*/
+.scrolling-active{
+    background-color: rgba(255, 255, 255, 0.84);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    transition: 1s;
+}
+
+.scrolling-active  a{
+    color: #000000 !important;
+}
+
+a.active{
+    color: #ffffff !important;
+}
+/*Apply styles after scroll end*/
+
+
+.home{
+    background-image: url(../img/home.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.hello{
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.name{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.home-txt-po{
+    align-items: center;
+    justify-content: center;
+}
+.social-icon{
+    position: absolute;
+    right: -10%;
+    bottom: 35%;
+}
+.social-icon a:hover{
+    text-decoration: none;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.about{
+    background-image: url("../img/about-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-photo{
+    width: 97%;
+}
+.about-txt{
+    width: 80%;
+}
+.skill{
+    background-image: url("../img/skill-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.progress-bar{
+    background-color: #b357ec !important;
+}
+.feature{
+    background-image: url("../img/feature-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.feature-card{
+    background-color: #001D38;
+    border-radius: 10px;
+    width: 150px;
+    height: 140px;
+}
+.feature-card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.32);
+}
+.height{
+    min-height: 25vh;
+}
+.work-card{
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.16);
+    background: rgba(0, 29, 56, 0.82);
+    border: 1px solid rgba(179, 87, 236, 0.83);
+}
+.work-card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.23);
+}
+.work-bg{
+    background-image: url("../img/work-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 576px){
+
+    .logo{
+        width: 40%;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+    .domrey-bars {
+        width: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .domrey-menu li a {
+        text-decoration: none;
+        color: #000000;
+        transition: 0.3s ease;
+        font-size: 15px;
+        padding: 7px 13px;
+    }
+    .domrey-menu {
+        position: fixed;
+        padding-top: 15%;
+        padding-left: 0;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    }
+    .domrey-menu li {
+        padding: 0;
+        margin: 1.5em 0;
+    }
+    .domrey-bars {
+        display: block;
+    }
+
+    .show-domrey-menu {
+        right: 0;
+    }
+
+
+    .home{
+        background-image: url(../img/home-respon.jpg);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .hello {
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+    .name {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .home-txt-po {
+        align-items: start;
+        justify-content: start;
+    }
+    .home-txt-po-sm{
+        margin-top: 50%;
+    }
+    .social-icon{
+        right: 5%;
+    }
+    .dev-txt{
+        font-size: 1rem;
+    }
+    .about{
+        background-image: url("../img/about-bg-respon.png");
+    }
+    .skill{
+        background-image: url("../img/skill-bg-respon.png");
+    }
+    .height{
+        min-height: 100vh;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+
+    .logo{
+        width: 40%;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+    .domrey-bars {
+        width: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .domrey-menu li a {
+        text-decoration: none;
+        color: #000000;
+        transition: 0.3s ease;
+        font-size: 15px;
+        padding: 7px 13px;
+    }
+    .domrey-menu {
+        position: fixed;
+        padding-top: 15%;
+        padding-left: 0;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    }
+    .domrey-menu li {
+        padding: 0;
+        margin: 1.5em 0;
+    }
+    .domrey-bars {
+        display: block;
+    }
+
+    .show-domrey-menu {
+        right: 0;
+    }
+
+
+    .home{
+        background-image: url(../img/home-respon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .hello {
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+    .home-txt-po {
+        align-items: start;
+        justify-content: start;
+    }
+    .home-txt-po-sm{
+        margin-top: 50%;
+    }
+    .social-icon{
+        right: 5%;
+    }
+    .dev-txt{
+        font-size: 1rem;
+    }
+    .about{
+        background-image: url("../img/about-bg-respon.png");
+    }
+    .skill{
+        background-image: url("../img/skill-bg-respon.png");
+    }
+    .height{
+        min-height: 100vh;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .logo{
+        width: 40%;
+    }
+    header {
+        justify-content: space-between;
+        padding: 0 1em;
+    }
+    .domrey-bars {
+        width: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .domrey-menu li a {
+        text-decoration: none;
+        color: #000000;
+        transition: 0.3s ease;
+        font-size: 15px;
+        padding: 7px 13px;
+    }
+    .domrey-menu {
+        position: fixed;
+        padding-top: 15%;
+        padding-left: 0;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        transition: 0.3s;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1);
+    }
+    .domrey-menu li {
+        padding: 0;
+        margin: 1.5em 0;
+    }
+    .domrey-bars {
+        display: block;
+    }
+
+    .show-domrey-menu {
+        right: 0;
+    }
+
+
+    .home{
+        background-image: url(../img/home-respon.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .home-txt-po {
+        align-items: start;
+        justify-content: start;
+    }
+    .home-txt-po-sm{
+        margin-top: 50%;
+    }
+    .social-icon{
+        right: 5%;
+    }
+    .dev-txt{
+        font-size: 1rem;
+    }
+    .about{
+        background-image: url("../img/about-bg-respon.png");
+    }
+    .skill{
+        background-image: url("../img/skill-bg-respon.png");
+    }
+    .height{
+        min-height: 25vh;
+    }
+
+}
+
+
